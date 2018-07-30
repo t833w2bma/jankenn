@@ -2,9 +2,6 @@
 //  ViewController.swift
 //  janken
 
-
-
-
 import UIKit
 
 class ViewController: UIViewController {
@@ -29,12 +26,7 @@ class ViewController: UIViewController {
     }
     
     
-   // func aiteCPU()->Int{
-     
-       // return teid
-   // }
-    
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
