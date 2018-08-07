@@ -7,13 +7,14 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var cpulb: UILabel!
     @IBOutlet weak var keka: UILabel!
+    @IBOutlet weak var yourlb: UILabel!
     
     @IBAction func tapGu(_ sender: Any) {
         let teid = Int(arc4random_uniform(3))
         print(teid)
         let tearr=["✊","✌️","🖐"]   //じゃんけんの配列
         cpulb.text = tearr[teid]  // CPUのラベルに手を表示
-        
+         yourlb.text = "✊"
         if teid == 1{
             keka.text="あなたの勝ち"
         }else if teid == 2{
@@ -30,7 +31,7 @@ class ViewController: UIViewController {
         print(teid)
         let tearr=["✊","✌️","🖐"]   //じゃんけんの配列
         cpulb.text = tearr[teid]  // CPUのラベルに手を表示
-        
+         yourlb.text = "✌️"
         if teid == 2{
             keka.text="あなたの勝ち"
         }else if teid == 0{
@@ -47,7 +48,7 @@ class ViewController: UIViewController {
         print(teid)
         let tearr=["✊","✌️","🖐"]   //じゃんけんの配列
         cpulb.text = tearr[teid]  // CPUのラベルに手を表示
-        
+         yourlb.text = "🖐"
         if teid == 0{
             keka.text="あなたの勝ち"
         }else if teid == 1{
