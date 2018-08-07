@@ -8,11 +8,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var cpulb: UILabel!
     @IBOutlet weak var keka: UILabel!
     @IBOutlet weak var yourlb: UILabel!
+    let tearr=["✊","✌️","🖐"]   //じゃんけんの配列
     
     @IBAction func tapGu(_ sender: Any) {
         let teid = Int(arc4random_uniform(3))
         print(teid)
-        let tearr=["✊","✌️","🖐"]   //じゃんけんの配列
         cpulb.text = tearr[teid]  // CPUのラベルに手を表示
          yourlb.text = "✊"
         if teid == 1{
@@ -29,7 +29,6 @@ class ViewController: UIViewController {
     @IBAction func tapChoki(_ sender: Any) {
         let teid = Int(arc4random_uniform(3))
         print(teid)
-        let tearr=["✊","✌️","🖐"]   //じゃんけんの配列
         cpulb.text = tearr[teid]  // CPUのラベルに手を表示
          yourlb.text = "✌️"
         if teid == 2{
@@ -46,7 +45,6 @@ class ViewController: UIViewController {
     @IBAction func tapPar(_ sender: Any) {
         let teid = Int(arc4random_uniform(3))
         print(teid)
-        let tearr=["✊","✌️","🖐"]   //じゃんけんの配列
         cpulb.text = tearr[teid]  // CPUのラベルに手を表示
          yourlb.text = "🖐"
         if teid == 0{
