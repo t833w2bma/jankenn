@@ -1,15 +1,9 @@
-//
 //  ViewController.swift
 //  janken
-
-
-
 
 import UIKit
 
 class ViewController: UIViewController {
-    
-    
     
     @IBOutlet weak var cpulb: UILabel!
     @IBOutlet weak var keka: UILabel!
@@ -46,6 +40,25 @@ class ViewController: UIViewController {
         }
     }
     
+   
+    
+    @IBAction func tapPar(_ sender: Any) {
+        let teid = Int(arc4random_uniform(3))
+        print(teid)
+        let tearr=["✊","✌️","🖐"]   //じゃんけんの配列
+        cpulb.text = tearr[teid]  // CPUのラベルに手を表示
+        
+        if teid == 0{
+            keka.text="あなたの勝ち"
+        }else if teid == 1{
+            keka.text = "あなたの負け"
+        }else {
+            keka.text = "あいこ"
+        }
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // 180度反転
@@ -59,6 +72,5 @@ class ViewController: UIViewController {
     
     
 }
-
 
 
